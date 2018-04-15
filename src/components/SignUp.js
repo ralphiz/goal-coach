@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { firebaseApp } from '../firebase';
 
-export default class SignUp extends React.Component {
+export default class SignUp extends Component {
   constructor(props) {
     super(props);
     this.state = {

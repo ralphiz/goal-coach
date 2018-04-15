@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { firebaseApp } from '../firebase';
 
-class App extends React.Component {
+class App extends Component {
   signOut() {
     firebaseApp.auth().signOut()
   }
