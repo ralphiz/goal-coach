@@ -11,13 +11,14 @@ class CompleteGoalList extends Component {
         const { email, title } = completeGoal.val();
         completeGoals.push({email, title});
       })
-      console.log('completeGoals',completeGoals);
       this.props.setCompleted(completeGoals);
     })
   }
 
   clearCompleted() {
-    completeGoalRef.set([]);
+    completeGoalRef.set(
+      []
+    );
   }
 
   render() {
